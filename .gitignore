@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.DS_Store
+weather_dw/target/
+weather_dw/logs/
+weather.duckdb
+logs/
+~/airflow/
+.aws/

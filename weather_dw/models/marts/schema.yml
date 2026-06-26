@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fct_weather_daily
+    description: "Final fact table. One row per city per day with all weather metrics."
+    columns:
+      - name: city
+        description: "City name."
+        tests:
+          - not_null
+
+      - name: date
+        description: "Date of the weather reading."
+        tests:
+          - not_null

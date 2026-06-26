@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: stg_weather
+    description: "Cleaned daily weather data for 5 South African cities from Open-Meteo API."
+    columns:
+      - name: city
+        description: "City name."
+        tests:
+          - not_null
+
+      - name: date
+        description: "Date of the weather reading."
+        tests:
+          - not_null
+
+      - name: temp_max
+        description: "Maximum temperature in Celsius."
+        tests:
+          - not_null
+
+      - name: weather_description
+        description: "Human readable weather description derived from WMO weather code."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Clear Sky', 'Partly Cloudy', 'Fog', 'Rain', 'Snow', 'Rain Showers', 'Thunderstorm', 'Unknown']

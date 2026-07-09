@@ -11,10 +11,6 @@ from datetime import datetime
 # 2. Flattens the nested weather data into a clean DataFrame
 # 3. Loads it into a DuckDB database as a raw table
 #
-# Why read from S3 instead of local files?
-# Because in a real pipeline, the extract and transform steps run
-# on different machines. S3 is the shared storage layer between them.
-# The extractor writes to S3, the transformer reads from S3.
 # ───────────────────────────────────────────────────────────────────────────────
 
 BUCKET = "weather-pipeline-calvin-010526241741-us-east-1-an"

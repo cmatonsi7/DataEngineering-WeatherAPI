@@ -6,7 +6,7 @@ from datetime import datetime
 
 # ── WHAT IS THIS? ──────────────────────────────────────────────────────────────
 # This script pulls daily weather data from the Open-Meteo API for 5 SA cities.
-# Open-Meteo is completely free — no API key needed.
+# 
 #
 # For each city it fetches:
 # - Max/min/mean temperature

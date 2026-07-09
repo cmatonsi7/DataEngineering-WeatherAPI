@@ -6,10 +6,10 @@ from datetime import datetime, timedelta
 # This is an Airflow DAG (Directed Acyclic Graph).
 # A DAG defines a pipeline — what tasks to run, in what order, on what schedule.
 #
-# Think of it like a recipe:
-# - The DAG is the recipe
-# - Tasks are the steps
-# - The schedule tells Airflow when to cook
+#
+# 
+# 
+# 
 #
 # Our pipeline has 3 tasks that run in sequence every day at 6AM:
 # 1. extract_weather  — pulls data from Open-Meteo API and uploads to S3
